@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "corsoProva"
+  "defaultProject": "corsoProva",
+  "cli": {
+    "analytics": "b8545023-9522-45d2-bac0-0e5c0f925f51"
+  }
 }
