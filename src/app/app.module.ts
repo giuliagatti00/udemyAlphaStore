@@ -8,8 +8,9 @@ import { LoginComponent } from './login/login.component';
 import {FormsModule} from "@angular/forms";
 import { ErrorComponent } from './error/error.component';
 import { ArticoliComponent } from './articoli/articoli.component';
+import {CoreModule} from "./core/core.module";
 
-@NgModule({
+@NgModule({ //modulo principale
   declarations: [ //dichiarati componenti
     AppComponent,
     WelcomeComponent,
@@ -17,12 +18,15 @@ import { ArticoliComponent } from './articoli/articoli.component';
     ErrorComponent,
     ArticoliComponent
   ],
-  imports: [ //e moduli importati
+  imports: [ //e moduli feature importati
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CoreModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] //componente che viene avviato all'avvio del modulo
 })
 export class AppModule { }
+
+//flow di avvio dell'applicazione main.ts avvia appmodule che lancia appcomponent lezione 24
