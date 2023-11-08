@@ -10,6 +10,9 @@ export class WelcomeComponent implements OnInit {
 
   utente: string = "";
 
+  titolo: string = "Benevenuti in AlphaShop";
+  sottotitolo: string = "Visualizza le offerte del giorno";
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void { //primo elemento che viene lanciato alla creazione del componente

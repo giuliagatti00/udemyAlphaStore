@@ -7,4 +7,5 @@ export interface IArticoli { //interfaccia da usare in articoli component ts
   prezzo: number
   active: boolean
   data: Date
+  imageUrl: string
 }
